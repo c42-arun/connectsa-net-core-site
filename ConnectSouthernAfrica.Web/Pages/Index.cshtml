@@ -1,10 +1,452 @@
 ﻿@page
-@model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="overlayer"></div>
+<div class="loader">
+    <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <div class="site-logo"><a href="index.html" class="text-uppercase">Connect SA</a></div>
+                <div>
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
+                            <li><a href="#home-section" class="nav-link">Home</a></li>
+                            <li><a href="#aboutus-section" class="nav-link">About Us</a></li>
+                            <li><a href="#timeline-section" class="nav-link">Timeline</a></li>
+                            <li><a href="#events" class="nav-link">Events</a></li>
+                            <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                            <li><a href="#contact-us-section" class="nav-link">Contact Us</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="ml-auto">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                    </nav>
+                    <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right">
+                        <span class="icon-menu h3"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="intro-section custom-owl-carousel" id="home-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mr-auto" data-aos="fade-up">
+
+                    <div class="owl-carousel slide-one-item-alt-text">
+                        <div class="slide-text">
+                            <h1>Connecting youth to, and through opportunities</h1>
+                            <p class="mb-5">
+                                Tackling challenges faced by Southern African youth through technology and innovation.
+                            </p>
+                            <!-- <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="owl-carousel slide-one-item-alt">
+                           <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+                        <img src="images/img_6.jpg" alt="Image" class="img-fluid">
+                        <img src="images/img_7.jpg" alt="Image" class="img-fluid">
+                        <img src="images/img_8.jpg" alt="Image" class="img-fluid">
+                        <img src="images/img_9.jpg" alt="Image" class="img-fluid">
+                    </div>
+
+                    <div class="owl-custom-direction">
+                        <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
+                        <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="site-section section-2" id="aboutus-section" data-aos="fade">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mb-5">
+                    <h2 class="section-title">About Us</h2>
+                    <h3>Who we are</h3>
+                    <p>
+                        Connect Southern Africa (CSA) is a determined and ambitious youth led regional non-profit social
+                        enterprise, responding to the challengesfaced by youth in the SADC region, such as youth unemployment,
+                        the gender digital gap, financial illiteracy and digital illiteracy.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="process bg-white rounded">
+                        <div>
+                            <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+                            <h3>Youth First</h3>
+                            <p>
+                                We believe that all
+                                youth regardless of their circumstances have fundamental moral, civil and
+                                constitutional rights and should be fully included and actively participate in all
+                                aspects of the economy and society.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="process bg-white rounded">
+                        <div>
+                            <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+                            <h3>Sustainable Innovation</h3>
+                            <p>
+                                We believe in responding to the challenges faced by youth
+                                through sustainable interventions and intelligent use of technologies such as block chain, internet of
+                                things, artificial
+                                intelligence and machine learning.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="process bg-white rounded">
+                        <div>
+                            <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+                            <h3>Self-determination</h3>
+                            <p>
+                                All youth, mainly those living with disabilities should be
+                                provided with appropriate resources and support, and that they can make decisions
+                                about their own lives and must be heard on issues that affect their well-being.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="row"><p></p><p></p></div> -->
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-lg-12 mb-5">
+                    <h3>Our story</h3>
+                    <p>
+                        Upon completion of a B.Sc. Agricultural Economics and Development Hons Degree from the
+                        Midlands State University in 2015, Ashley Mupfawa was excited and ready for the next step of
+                        his life; employment. Surprisingly, most decent jobs advertised for Agricultural Economists
+                        required at least five years of experience; he hardly had a year of experience obtained during
+                        work related learning.
+                    </p>
+                    <p>
+                        More-to-that, most entry level jobs that he could apply for required a driver’s licence and soft
+                        skills such as; administration, social media, digital marketing, self branding and Microsoft
+                        packages. During one of the interviews he got invited to, he was asked if he had any certification
+                        in administration and Microsoft Office, unfortunately he didn’t so he couldn’t get the job.
+                        Worried if he was the only one facing this challenge Ashley asked his fellow graduates if they
+                        had these kinds of certifications and found that they also didn’t. A small survey he did showed
+                        that out of ten graduates only one had an administration course. This led to the identification
+                        of the “gap” and so Ashley, together with four others namely Lista Dube, Farai Masiyambiri,
+                        Mbulelo Mwanza and Milton Jack all involved in the small survey embarked on a journey of
+                        discovery -
+                    </p>
+                    <ul>
+                        <li>Was it just them or were many more facing a similar challenge?</li>
+                        <li>If they were not the only ones facing this challenge, what could be done to remedy it?</li>
+                        <li>
+                            What about those that were still in High school and University – could they be assisted to obtain
+                            such certificates before they graduate to ensure they stand out in the job application process once they
+                            are done
+                            with their studies?
+                        </li>
+                    </ul>
+                    <p>
+                        Although these are short courses in nature one still struggles to obtain them due to the
+                        exorbitant fees charged by training institutions. This in many cases results in prolonged waiting
+                        while one is trying to gather the funds. During this wait one might end up involving themselves
+                        in the social ills that result from unemployment which may include but are not limited to theft,
+                        alcoholism, drug abuse, prostitution, unwanted pregnancies and family disputes.
+                    </p>
+                    <p>
+                        Ashley decided to invite his fellow graduates mentioned above and together they came up with
+                        an intervention strategy in form of an online training programme that would be accredited by
+                        an academic institution. The vision was to see to it that every graduate leaves high school or
+                        tertiary education holding certificates in Administration, Microsoft Office, Financial Literacy and
+                        Digital Literacy to complement their formal qualification hence making them more employable.
+                        These skills are equally important to young people that might choose to start their own income
+                        generating projects aiding to the government’s objective of promoting an entrepreneurial
+                        culture among the youth and thus Connect Southern Africa was formalized and got registered
+                        as a Trust on the 15th of March 2018.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="site-section section-2 bg-light" id="timeline-section" data-aos="fade">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title">Timeline</h2>
+
+                <div class="timeline">
+
+                    <div class="timelinecontainer left">
+                        <div class="timelinecontent">
+                            <h2>July 2017</h2>
+                            <p>Held initial board Meeting and Strategic Plan Meeting in Harare, Zimbabwe</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer right">
+                        <div class="timelinecontent">
+                            <h2>March 2018</h2>
+                            <p>Connect SA registers in Zimbabwe.</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer left">
+                        <div class="timelinecontent">
+                            <h2>May 2018</h2>
+                            <p>Received the founder's alumni grant from the International Citizen Service</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer right">
+                        <div class="timelinecontent">
+                            <h2>July 2018</h2>
+                            <p>Hosted the Peace, Leadership and Employability Workshop in Johannesburg, South Africa.</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer left">
+                        <div class="timelinecontent">
+                            <h2>Oct 2018</h2>
+                            <p>Connect SA registers in South Africa.</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer right">
+                        <div class="timelinecontent">
+                            <h2>Nov 2018</h2>
+                            <p>Attended Global Entrepreneurship Week 2018 South Africa.</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer left">
+                        <div class="timelinecontent">
+                            <h2>April 2019</h2>
+                            <p>Received Microsoft Azure Credits for Non Profits.</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer right">
+                        <div class="timelinecontent">
+                            <h2>Nov 2019</h2>
+                            <p>Hosted the Global Entrepreneurship Week 2019 Zimbabwe.</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer left">
+                        <div class="timelinecontent">
+                            <h2>Jan 2020</h2>
+                            <p>Launched the High School Soft Skills Training programme in Gauteng, South Africa.</p>
+                        </div>
+                    </div>
+                    <div class="timelinecontainer right">
+                        <div class="timelinecontent">
+                            <h2>Feb 2020</h2>
+                            <p>Received the Google for Non-profits Marketing Grant.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section section-2" id="events" data-aos="fade">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <h2 class="section-title">Events</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam
+                        voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias
+                        blanditiis consequuntur sunt nisi.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="owl-carousel nonloop-block-13">
+
+            <a class="work-thumb" href="images/img_1.jpg" data-fancybox="gallery">
+                <div class="work-text">
+                    <h3>Event 1</h3>
+                    <span class="category">Event description</span>
+                </div>
+                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            </a>
+
+            <a class="work-thumb" href="images/img_2.jpg" data-fancybox="gallery">
+                <div class="work-text">
+                    <h3>Event 2</h3>
+                    <span class="category">Event description</span>
+                </div>
+                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+            </a>
+
+            <a class="work-thumb" href="images/img_3.jpg" data-fancybox="gallery">
+                <div class="work-text">
+                    <h3>Event 3</h3>
+                    <span class="category">Event description</span>
+                </div>
+                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+            </a>
+
+            <a class="work-thumb" href="images/img_4.jpg" data-fancybox="gallery">
+                <div class="work-text">
+                    <h3>Event 4</h3>
+                    <span class="category">Event description</span>
+                </div>
+                <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+            </a>
+
+            <a class="work-thumb" href="images/img_1.jpg" data-fancybox="gallery">
+                <div class="work-text">
+                    <h3>Event 5</h3>
+                    <span class="category">Event description</span>
+                </div>
+                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="site-section" data-aos="fade">
+            <div class="container">
+                <a href="https://youtu.be/9FKSsar8mSw" class="video-img-bg" data-fancybox data-ratio="2">
+                    <span class="play-button">
+                        <span class="icon-play"></span>
+                    </span>
+                    <img src="images/connectsa-logo.png" alt="Image" class="img-fluid">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="site-section testimonial-wrap custom-owl-carousel" id="testimonials-section">
+        <div class="container">
+            <div class="row text-center justify-content-center mb-5" data-aos="fade-up">
+                <div class="col-lg-6 mb-5 text-center">
+                    <h2 class="section-title w-100 mx-auto">Testimonials</h2>
+                    <p>
+                        Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa
+                        dolore molestias blanditiis consequuntur sunt nisi.
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-5 mr-auto">
+
+                    <div class="owl-carousel slide-one-item-alt-text">
+                        <div class="slide-text">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
+                                    obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span>
+                                </p>
+                                <p class="author">&mdash; Jean Doe</p>
+                            </blockquote>
+                        </div>
+                        <div class="slide-text">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
+                                    obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span>
+                                </p>
+                                <p class="author">&mdash; Gregg Pollach</p>
+                            </blockquote>
+                        </div>
+                        <div class="slide-text">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
+                                    obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span>
+                                </p>
+                                <p class="author">&mdash; Rober Kenneth</p>
+                            </blockquote>
+                        </div>
+                        <div class="slide-text">
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
+                                    obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span>
+                                </p>
+                                <p class="author">&mdash; Joshua Smith</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="owl-carousel slide-one-item-alt">
+                        <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+                        <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+                        <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+                        <img src="images/person_4.jpg" alt="Image" class="img-fluid">
+                    </div>
+
+                    <div class="owl-custom-direction">
+                        <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
+                        <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="site-section section-2" id="contact-us-section" data-aos="fade">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <h2 class="section-title">Contact Us</h2>
+                <div>
+                    <h3>South Africa Office</h3>
+                    <h6>729 19th Avenue</h6>
+                    <h6>Rietfontein</h6>
+                    <h6>Pretoria</h6>
+                    <h6>0084</h6>
+                </div>
+                <hr>
+                <div>
+                    <h3>Zimbabwe Office</h3>
+                    <h6>No. 71 King George Road</h6>
+                    <h6>Harare</h6>
+                    <h6>Zimbabwe</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
